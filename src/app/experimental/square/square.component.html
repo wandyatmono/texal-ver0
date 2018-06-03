@@ -1,0 +1,14 @@
+<div 
+  class="square teal white-text"
+  [id]="squareId"
+  [style.left.px]="x" 
+  [style.top.px]="y"
+  (panstart)="onPanStart($event)"
+  (panmove)="onPanMove($event)"
+  (press)="onPress($event)"
+  (pressup)="onPressUp($event)"
+  (panend)="onPressUp($event)"
+>
+  <div class="center-align">Move Me!</div>
+  <div class="center-align">({{x}}, {{y}})</div>
+</div>
