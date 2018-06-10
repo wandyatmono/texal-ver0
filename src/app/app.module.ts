@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { MaterializeModule } from 'angular2-materialize';
 import { ExperimentalModule } from './experimental/experimental.module';
 
+import { ScrollService } from './services/scroll.service';
+import { UtilityService } from './services/utility.service';
+
 import { AppComponent } from './app.component';
 
 
@@ -16,7 +19,10 @@ import { AppComponent } from './app.component';
     MaterializeModule,
     ExperimentalModule
   ],
-  providers: [],
+  providers: [
+    ScrollService,
+    UtilityService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+.dish {
+    display: none;
+    position: absolute;
+    top: 10px; left: 0; 
+    width: 100%; background-color: green; color: red
+}
+
+#sidenav {
+    z-index: 99999;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    overflow: hidden;
+}
+
+#flap {
+    position: absolute;
+    top: 0; right: 0;
+    width: 15%; height: 100%;
+}
+
+#stripes {
+    position: absolute;
+    top: 0; left: 0; right: 16px;
+    height: 100%;
+    background-image: url(../../../assets/images/flap-stripes-background/v0.png);
+}
+
+#dish-container {
+    position: absolute;
+    top: 0; left: 0; width: 85%; height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+@media (min-width: 778px) {
+    #flap {
+        width: 40%; height: 100%;
+    }
+    #dish-container {
+        width: 60%; height: 100%;
+    }
+}

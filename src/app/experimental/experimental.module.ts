@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LoremComponent } from './lorem/lorem.component';
-import { SquareComponent } from './square/square.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   imports: [
@@ -10,11 +10,11 @@ import { SquareComponent } from './square/square.component';
   ],
   declarations: [
     LoremComponent,
-    SquareComponent
+    SidenavComponent
   ],
   exports: [
       LoremComponent,
-      SquareComponent
-  ],
+      SidenavComponent
+  ]
 })
 export class ExperimentalModule { }

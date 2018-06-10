@@ -1,0 +1,37 @@
+<div id="sidenav"
+    [style.left.px]="x"
+    (window:resize)="onResize()"
+    (window:keyup)="onKeyUp($event)"
+>
+    <div id="dish-container" class="grey lighten-3">
+        <div id="dish-wrapper"
+            [style.right.px]="-scrollbarWidth"
+        >
+            <div id="dish-servant">
+                keyboardEvent: any = {{ keyboardEvent }}<br />
+                alyKey: boolean = {{ altKey }}<br />
+                charCode: number = {{ charCode }}<br />
+                code: string = {{ code }}<br />
+                ctrlKey: boolean = {{ ctrlKey }}<br />
+                keyCode: number = {{ keyCode }}<br />
+                keyIdentifier: string = {{ keyIdentifier }}<br />
+                metaKey: boolean = {{ metaKey }}<br />
+                shiftKey: boolean = {{ shiftKey }}<br />
+                timeStamp: number = {{ timeStamp }}<br />
+                type: string = {{ type }}<br />
+                which: number = {{ which }}<br />
+                <app-lorem></app-lorem>
+            </div>
+        </div>
+    </div>
+    <div id="flap"
+        (mousedown)="onTouchstart($event)"
+        (mouseup)="onTouchend($event)"
+        (panstart)="onPanStart($event)"
+        (panleft)="onPanMove($event)"
+        (panright)="onPanMove($event)"
+        (panend)="onPanEnd($event)"
+    >
+        <div id="stripes"></div>
+    </div>
+</div>
